@@ -1,0 +1,22 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    background-color: rgb(130, 130, 130);
+    padding: 4px;
+    color: #202020;
+}
+
+h1, h2 {
+    color: darkblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header img {
+    border: 2px solid #808080;
+    padding: 2px;
+    margin: 8px;
+    border-radius: 8px;
+    max-width: 100px;
+}
