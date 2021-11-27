@@ -87,7 +87,12 @@ header #menu {
         "main aside"
         "footer footer";
     grid-template-columns: auto 200px;
-    grid-gap: 8px;
+    gap: 8px;
+}
+
+#formInfo {
+    font-size: 14px;
+    font-style: italic;
 }
 
 /* header #headshot, header #sitename, header #menu {
