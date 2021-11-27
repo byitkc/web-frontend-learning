@@ -14,12 +14,13 @@
 <body>
 
     <header>
-        <h1>Brandon Young</h1>
-        <img src="img/0f811aafee0f5b91c933fffa2f0d1eda.gif" 
-             alt="Shovel Knight" />
+        <img id="headshot"
+            src="img/0f811aafee0f5b91c933fffa2f0d1eda.gif" 
+            alt="Shovel Knight" />
+        <h1 id="sitename">Brandon Young</h1>
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
+        <ul id="menu">
+            <li class="active"><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="privacy.html">Privacy</a></li>
         </ul>
@@ -29,13 +30,17 @@
         <p><strong>Purpose:</strong> To learn Javascript</p>
 
         <h2>Experience</h2>
-        <div>
-            <p>Technology Group Solutions - Managed Service Provider - 2009-2021</p>
+        <div class="experience">
+            <p class="title">Technology Group Solutions - Managed Service Provider - 2009-2021</p>
             <p>Infrastructrue Administrator</p>
         </div>
-        <div>
-            <p>Subway - Sammiches - 2008-2009</p>
+        <div class="experience">
+            <p class="title">Subway - Sammiches - 2008-2009</p>
             <p>Sammich Maker</p>
+        </div>
+        <div class="experience">
+            <p class="title">Self-Employed - Stuff - 2005-2008</p>
+            <p>Doing stuff and things</p>
         </div>
     </main>
 
@@ -82,7 +87,7 @@
     </aside>
 
     <footer>
-        &copy; Copywrite 2021 - Brandon Young
+        &copy; Copyright 2021 - Brandon Young
     </footer>
 
 </body>

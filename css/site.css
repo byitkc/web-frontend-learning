@@ -13,10 +13,67 @@ h1, h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-header img {
+#headshot {
     border: 2px solid #808080;
     padding: 2px;
     margin: 8px;
     border-radius: 8px;
-    max-width: 100px;
+    max-width: 50px;
 }
+
+.experience {
+    border: inset 2px;
+    margin-bottom: 4px;
+    padding: 4px;
+    background-color: white;
+    color: #222;
+}
+
+.experience .title {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #202020;
+    text-align: center;
+    color: lightblue;
+    padding: 2px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+#menu li {
+    display: inline;
+    padding: 8px;
+    background: #202020;
+}
+
+#menu li a {
+    color: lightgray !important;
+    text-decoration: none;
+}
+
+#menu li.active {
+    background-color: darkslateblue;
+}
+
+#menu {
+    float: right;
+}
+
+header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+header #menu {
+    margin-left: auto;
+}
+
+/* header #headshot, header #sitename, header #menu {
+    display: inline;
+    vertical-align: middle;
+} */
