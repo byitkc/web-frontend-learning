@@ -1,5 +1,7 @@
 // index.js
 
+import Contact from "./Contact.js";
+
 // var number = 5;
 // let name = "Brandon";
 
@@ -38,7 +40,12 @@ function clearMessage() {
 const first = "first"
 
 const contactForm = document.getElementById("contactForm");
-contactForm.addEventListener("submit", sendMessage);
+contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const contact = new Contact(contactForm);
+    showMessage("Sending your message... Thank you: " + contact.fullName);
+    contact.send()
+});
 
 function sendMessage() {
     showMessage("Please wait, sending your email");
@@ -54,3 +61,7 @@ for (let x = 0; x < experiences.length; x++) {
         event.target.style = "";
     });
 }
+
+let form = document.getElementById("contactForm")
+
+
